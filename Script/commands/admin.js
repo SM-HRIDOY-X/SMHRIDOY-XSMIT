@@ -31,7 +31,7 @@ module.exports.run = async function ({ api, event }) {
       "┣━━━━━━━━━━━━━━━━━━━━━━━┫\n" +
       "┃ 𝐓𝐢𝐤𝐓𝐨𝐤    : smhridoyariyan420\n" +
       "┃ 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 : https://t.me/smhridoy007\n" +
-      "┃ 𝐅𝐛:https://www.facebook.com/Hridoy.tera.bap.agaya/\n" +
+      "┃ 𝐅𝐛:https://www.facebook.com/513453703/\n" +
       "┣━━━━━━━━━━━━━━━━━━━━━━━┫\n" +
       "┃ Updated Time: " + currentTime + "\n" +
       "┗━━━━━━━━━━━━━━━━━━━━━━━┛",
