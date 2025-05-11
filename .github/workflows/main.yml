@@ -1,14 +1,8 @@
-name: Nayan-Bot
+name: Node.js CI
 
 on:
 
-push:
-
-branches: [ main ]
-
-pull_request:
-
-branches: [ main ]
+workflow_dispatch:
 
 jobs:
 
@@ -16,24 +10,28 @@ build:
 
 runs-on: ubuntu-latest
 
+strategy:
+
+matrix:
+
+node-version: [16.x]
+
+# See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
 steps:
 
-- name: Checkout code
+- uses: actions/checkout@v2
 
-uses: actions/checkout@v3
+- name: Use Node.js ${{ matrix.node-version }}
 
-- name: Set up Node.js
-
-uses: actions/setup-node@v3
+uses: actions/setup-node@v2
 
 with:
 
-node-version: '16'
+node-version: ${{ matrix.node-version }}
 
-- name: Install dependencies
+cache: 'npm'
 
-run: npm install
+- run: npm install
 
-- name: Nayan-Bot
-
-run: npm start
+- run: npm start
