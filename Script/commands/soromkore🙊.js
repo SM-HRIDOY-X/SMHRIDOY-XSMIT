@@ -5,9 +5,10 @@ module.exports.config = {
   version: "1.0.1",
   hasPermssion: 0,
   credits: "Joshua Sy",
+  usePrefix: false,
   description: "Scooby Doo template memes",
   commandCategory: "voice",
-  usages: "🙊",
+  usages: "user",
   cooldowns: 5,
   dependencies: {}
 };
