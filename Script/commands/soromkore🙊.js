@@ -1,16 +1,20 @@
-const fs = require("fs");
-module.exports = {
-  config:{
-	name: "npx10",
-        version: "1.0.1",
-        prefix: false,
-	permssion: 0,
-	credits: "Fahim", 
-	description: "Fun",
-	category: "no prefix",
-	usages: "",
-        cooldowns: 5, 
-},
+module.exports.config = {
+	name: "🙊",
+	version: "1.0.1",
+	hasPermssion: 0,
+	credits: "Joshua Sy",
+	description: "scooby doo template memes",
+	commandCategory: "voice",
+	usages: "...",
+	cooldowns: 5,
+	dependencies: {
+	 "fs-extra": "",
+	 "axios": "",
+	 "canvas" :"",
+	 "jimp": "",
+	 "node-superfetch": ""
+	}
+};
 
 handleEvent: function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
